@@ -54,17 +54,33 @@
 // // console.log(items);
 
 //!!-- Object Destructuring --!!
-const address = {
-    street: '',
-    city: '',
-    country: ''
-};
+// // const address = {
+// //     street: '',
+// //     city: '',
+// //     country: ''
+// // };
 
 // const street = address.street;
 // const city = address.city;
 // const country = address.country;
 
 //Much cleaner way to write lines 63-65
-const { street, city } = address;
+// // const { street, city } = address;
 //what if we want to label it differently?
-const {country: cntry} = address;
+// // const {country: cntry} = address;
+
+//!!-- Spread Operator --!!
+const first = [1,2,3];
+const second = [4,5,6];
+//Old way to concat
+const combined = first.concat(second);
+
+//Spread operator way and can easily add within array as shown
+const spreadCombined = [...first,'a', ...second];
+
+//Lets combine objects
+const firstO ={name: 'Zachary'};
+const secondO = {job: 'Junior Developer'};
+
+const combinedObjects = {...firstO, ...secondO, location: 'London'};
+console.log(combinedObjects);
