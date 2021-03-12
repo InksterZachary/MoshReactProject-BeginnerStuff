@@ -37,12 +37,18 @@
 // // console.log(activeJobs);
 
 //Arrow functions and this
-const person = {
-    talk(){
-        setTimeout(() => {
-        console.log('this', this);
-        }, 1000);
-    }
-};
+//When using the fat arrow and this, it does not rebind the this keyword, allowing us to still reference the object itself.
+// // const person = {
+// //     talk(){
+// //         setTimeout(() => {
+// //         console.log('this', this);
+// //         }, 1000);
+// //     }
+// // };
 
-person.talk();
+// // person.talk();
+
+// --!! Array.Map method !!--
+const colors = ['red', 'green', 'blue'];
+const items = colors.map(color => `<li>${color}</li>`);
+console.log(items);
