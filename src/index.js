@@ -49,6 +49,22 @@
 // // person.talk();
 
 // --!! Array.Map method !!--
-const colors = ['red', 'green', 'blue'];
-const items = colors.map(color => `<li>${color}</li>`);
-console.log(items);
+// // const colors = ['red', 'green', 'blue'];
+// // const items = colors.map(color => `<li>${color}</li>`);
+// // console.log(items);
+
+//!!-- Object Destructuring --!!
+const address = {
+    street: '',
+    city: '',
+    country: ''
+};
+
+// const street = address.street;
+// const city = address.city;
+// const country = address.country;
+
+//Much cleaner way to write lines 63-65
+const { street, city } = address;
+//what if we want to label it differently?
+const {country: cntry} = address;
