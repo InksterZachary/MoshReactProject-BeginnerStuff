@@ -70,17 +70,30 @@
 // // const {country: cntry} = address;
 
 //!!-- Spread Operator --!!
-const first = [1,2,3];
-const second = [4,5,6];
+// // const first = [1,2,3];
+// // const second = [4,5,6];
 //Old way to concat
-const combined = first.concat(second);
+// // const combined = first.concat(second);
 
 //Spread operator way and can easily add within array as shown
-const spreadCombined = [...first,'a', ...second];
+// // const spreadCombined = [...first,'a', ...second];
 
 //Lets combine objects
-const firstO ={name: 'Zachary'};
-const secondO = {job: 'Junior Developer'};
+// // const firstO ={name: 'Zachary'};
+// // const secondO = {job: 'Junior Developer'};
 
-const combinedObjects = {...firstO, ...secondO, location: 'London'};
-console.log(combinedObjects);
+// // const combinedObjects = {...firstO, ...secondO, location: 'London'};
+// // console.log(combinedObjects);
+
+// !!-- Classes --!!
+class Person{
+    constructor(name){
+        this.name = name;
+    }
+    
+    walk() {
+        console.log("Walk");
+    }
+}
+const person = new Person('Zachary');
+person.walk();
