@@ -1,3 +1,5 @@
+import { Teacher } from './teacher';
+
 // !!-- Objects, this, binding --!!
 // const person = {
 //     name: 'Zachary',
@@ -85,15 +87,14 @@
 // // const combinedObjects = {...firstO, ...secondO, location: 'London'};
 // // console.log(combinedObjects);
 
-// !!-- Classes --!!
-class Person{
-    constructor(name){
-        this.name = name;
-    }
-    
-    walk() {
-        console.log("Walk");
-    }
-}
-const person = new Person('Zachary');
-person.walk();
+//!!-- Classes --!!
+
+// // const person = new Person('Zachary');
+// // person.walk();
+
+//!!-- Inheritance --!!
+
+const teacher = new Teacher("Zachary", "MSc");
+console.log(teacher);
+teacher.teach();
+//!!-- Modules --!!
