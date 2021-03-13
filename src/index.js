@@ -1,4 +1,4 @@
-import { Teacher } from './teacher';
+import Teacher, { promote } from './teacher';
 
 // !!-- Objects, this, binding --!!
 // const person = {
@@ -94,7 +94,12 @@ import { Teacher } from './teacher';
 
 //!!-- Inheritance --!!
 
-const teacher = new Teacher("Zachary", "MSc");
-console.log(teacher);
-teacher.teach();
+// // const teacher = new Teacher("Zachary", "MSc");
+// // console.log(teacher);
+// // teacher.teach();
 //!!-- Modules --!!
+//!!-- Named and Default exports --!!
+//We can export one or more objects from a given module using export, for this example a function was created in teacher.js and
+// here in index.js I can choose to import the function or the class
+//Deafult -> import ... from '';
+//Named -> import { ... } from '';
